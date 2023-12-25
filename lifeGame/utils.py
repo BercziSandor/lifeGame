@@ -32,5 +32,6 @@ class Vector:
         return Vector(self.x * scalar, self.y * scalar)
 
     def magnitude(self):
-        """Calculate the magnitude of the vector."""
+        """Calculate the magnitude (length or size) of the
+        vector."""
         return math.sqrt(self.x ** 2 + self.y ** 2)

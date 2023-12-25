@@ -15,18 +15,13 @@ def main():
     r = Rabbit()
     sb.addCreature(r)
 
-    cs = sb.get_creatures_in_range(r.position, 1200000)
-    p = r.sort_by_distance(r.filter_partner(cs))
-    for pp in p:
-        print(pp)
-        print("dist:" + str(r.position.distance_to(pp.position)))
+    print(sb)
 
-    e = r.filter_enemies(cs)
-    n = r.filter_nutrition(cs)
+    # s = Simulation(storyBoard=sb)
+    # print(f"Status of the simulation at {s.time:.2f}")
+    # for c in s.get_creatures():
+    #     print(c)
 
-    # print(sb)
-
-    s = Simulation(storyBoard=sb)
     # s.start()
 
     # fu=Grass()
